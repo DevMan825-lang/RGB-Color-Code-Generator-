@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>RGB Color Code <br> Generator</h1>
+  <div class="parent-container" id="main">
+    <center>
+   <div class="child-container">
+      <pre>Result:</pre>
+      <br><br> 
+      <input type="text" id="text" readonly/> 
+      <br><br> 
+      <pre>Red:</pre>
+      <br><br>
+      <input type="range" min="0" max="255" value="0" id="red" class="reds"/> 
+      <br><br> 
+       <pre>Green:</pre>
+      <br><br>
+      <input type="range" min="0" max="255" value="0" id="green"/> 
+      <br><br> 
+       <pre>Blue:</pre>
+      <br><br>
+      <input type="range" min="0" max="255" value="0" id="blue"/> 
+      <br><br> <br> 
+      <button onclick="colorCode()">Copy Color Code <i class="fa-regular fa-clone"></i></button>
+      <br><br>
+      <button onclick="reset()">Reset</button>
+    </div>
+    </center> 
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
